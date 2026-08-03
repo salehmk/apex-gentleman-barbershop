@@ -6,7 +6,37 @@
 document.addEventListener('DOMContentLoaded', () => {
   
   /* ==========================================================================
-     1. STICKY HEADER & SCROLL BEHAVIOR
+     1. DYNAMIC OPEN/CLOSED LIVE STATUS CALCULATOR
+     ========================================================================== */
+  const liveStatusBadge = document.getElementById('live-status-badge');
+  const liveStatusText = document.getElementById('live-status-text');
+
+  if (liveStatusBadge && liveStatusText) {
+    const now = new Date();
+    const day = now.getDay(); // 0 = Sunday, 1 = Monday, ..., 5 = Friday, 6 = Saturday
+    const hour = now.getHours();
+
+    let isOpen = false;
+
+    // Schedule: Mon (1) to Sat (6), 9:00 to 20:00. Sun (0): Closed
+    if (day >= 1 && day <= 6) {
+      if (hour >= 9 && hour < 20) {
+        isOpen = true;
+      }
+    }
+
+    if (isOpen) {
+      liveStatusText.textContent = 'مفتوح الآن | استقبال بدون موعد';
+      liveStatusBadge.querySelector('.badge-dot').style.backgroundColor = 'var(--status-emerald)';
+    } else {
+      liveStatusText.textContent = 'مغلق حالياً | يفتح غداً 9:00 صباحاً';
+      liveStatusBadge.querySelector('.badge-dot').style.backgroundColor = '#EF4444';
+      liveStatusBadge.querySelector('.badge-dot').style.boxShadow = '0 0 10px #EF4444';
+    }
+  }
+
+  /* ==========================================================================
+     2. STICKY HEADER & SCROLL BEHAVIOR
      ========================================================================== */
   const header = document.getElementById('site-header');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -39,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
-     2. MOBILE NAVIGATION DRAWER
+     3. MOBILE NAVIGATION DRAWER
      ========================================================================== */
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -60,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     3. SERVICES CATEGORY TAB FILTERING
+     4. SERVICES CATEGORY TAB FILTERING
      ========================================================================== */
   const tabBtns = document.querySelectorAll('.tab-btn');
   const serviceCards = document.querySelectorAll('.service-card');
@@ -93,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
-     4. INTERACTIVE BEFORE & AFTER SLIDER (TOUCH & MOUSE DRAG)
+     5. INTERACTIVE BEFORE & AFTER SLIDER (TOUCH & MOUSE DRAG)
      ========================================================================== */
   const sliderContainer = document.getElementById('before-after-slider');
   const afterImage = sliderContainer ? sliderContainer.querySelector('.image-after') : null;
@@ -147,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     5. INTERSECTION OBSERVER ANIMATIONS
+     6. INTERSECTION OBSERVER ANIMATIONS
      ========================================================================== */
   const observerOptions = {
     threshold: 0.15,
