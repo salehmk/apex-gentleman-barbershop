@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Gentleman | Luxury Barber Shop & Grooming Lounge</title>
+  <meta name="description" content="Premium Barber Shop & Grooming Lounge for young professionals. Master haircuts, precision beard trims, hot towel shaves, and executive styling.">
+  <meta name="keywords" content="barber shop, hair salon, men's grooming, beard trim, hair cut, fade haircut, luxury barbershop">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Apex Gentleman | Luxury Barber Shop & Grooming Lounge">
+  <meta property="og:description" content="Precision cuts, razor-sharp fades, and luxury beard sculpting for the modern gentleman.">
+  <meta property="og:image" content="assets/images/hero-bg.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Apex Gentleman Barbershop & Grooming Lounge",
+    "image": "assets/images/hero-bg.png",
+    "telephone": "+1234567890",
+    "url": "https://apexgentlemanbarber.com",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "742 Executive Boulevard, Suite 100",
+      "addressLocality": "Metropolis",
+      "addressRegion": "NY",
+      "postalCode": "10001",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "480"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Background Decorative Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo">
+        <span class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3L18 21"/><path d="M18 3L6 21"/><circle cx="12" cy="12" r="3"/></svg>
+        </span>
+        <span class="logo-text">APEX <span class="gold-text">GENTLEMAN</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services & Prices</a></li>
+          <li><a href="#gallery" class="nav-link">Before & After</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+1234567890" class="btn btn-call-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/1234567890?text=Hello%20Apex%20Gentleman,%20I%20would%20like%20to%20inquire%20about%20a%20grooming%20session." target="_blank" rel="noopener" class="btn btn-whatsapp-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.486 1.333 5.002l-1.416 5.176 5.297-1.389c1.464.798 3.116 1.218 4.772 1.219h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.038-5.176-2.925-7.064s-4.394-2.924-7.064-2.924zm5.795 14.129c-.244.688-1.417 1.314-1.956 1.396-.51.077-1.173.109-1.89-.12-.435-.139-1.002-.325-1.745-.648-3.125-1.357-5.155-4.524-5.311-4.732-.156-.208-1.27-1.691-1.27-3.226 0-1.534.804-2.289 1.089-2.602.285-.313.623-.391.83-.391.208 0 .416.002.597.01.194.008.455-.074.713.546.26.623.883 2.158.96 2.314.078.156.13.338.026.546-.104.208-.156.338-.312.52-.156.182-.328.406-.468.546-.156.156-.319.326-.137.638.182.312.808 1.334 1.734 2.159 1.19 1.06 2.193 1.389 2.505 1.545.312.156.494.13.676-.078.182-.208.779-.91 1.013-1.222.234-.312.468-.26.779-.143.312.117 1.974.936 2.312 1.105.338.169.563.26.645.403.082.143.082.831-.162 1.519z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop" style="background-image: url('assets/images/hero-bg.png');"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">EXECUTIVE MEN'S GROOMING LOUNGE</span>
+      </div>
+      
+      <h1 class="hero-title">
+        PRECISION CUTS.<br>
+        <span class="gold-gradient-text">ELEGANT STYLE.</span>
+      </h1>
+
+      <p class="hero-description">
+        Crafted exclusively for young professionals and gentlemen who demand razor-sharp precision, bespoke styling, and an uncompromised grooming experience.
+      </p>
+
+      <div class="hero-rating">
+        <div class="stars">★★★★★</div>
+        <span class="rating-score">4.9 / 5.0</span>
+        <span class="rating-reviews">(480+ Verified Client Reviews)</span>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="tel:+1234567890" class="btn btn-primary btn-glow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+
+        <a href="https://wa.me/1234567890?text=Hi!%20I'd%20like%20to%20ask%20about%20your%20services%20and%20pricing." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.486 1.333 5.002l-1.416 5.176 5.297-1.389c1.464.798 3.116 1.218 4.772 1.219h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.038-5.176-2.925-7.064s-4.394-2.924-7.064-2.924zm5.795 14.129c-.244.688-1.417 1.314-1.956 1.396-.51.077-1.173.109-1.89-.12-.435-.139-1.002-.325-1.745-.648-3.125-1.357-5.155-4.524-5.311-4.732-.156-.208-1.27-1.691-1.27-3.226 0-1.534.804-2.289 1.089-2.602.285-.313.623-.391.83-.391.208 0 .416.002.597.01.194.008.455-.074.713.546.26.623.883 2.158.96 2.314.078.156.13.338.026.546-.104.208-.156.338-.312.52-.156.182-.328.406-.468.546-.156.156-.319.326-.137.638.182.312.808 1.334 1.734 2.159 1.19 1.06 2.193 1.389 2.505 1.545.312.156.494.13.676-.078.182-.208.779-.91 1.013-1.222.234-.312.468-.26.779-.143.312.117 1.974.936 2.312 1.105.338.169.563.26.645.403.082.143.082.831-.162 1.519z"/></svg>
+          Instant WhatsApp Chat
+        </a>
+      </div>
+
+      <!-- Quick Info Strip -->
+      <div class="hero-strip">
+        <div class="strip-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Mon - Sat: 9:00 AM - 8:00 PM</span>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>742 Executive Blvd, Suite 100</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down-btn" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5"/><path d="M12 6v12"/></svg>
+    </a>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="section-padding about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="assets/images/about-lounge.png" alt="Apex Gentleman Barber Shop Lounge Interior" class="about-image">
+          <div class="experience-badge">
+            <span class="badge-num">10+</span>
+            <span class="badge-lbl">Years of Mastery</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-header align-left">
+            <span class="section-subtitle">OUR CRAFTSMANSHIP</span>
+            <h2 class="section-title">Where Tradition Meets <span class="gold-text">Modern Elegance</span></h2>
+          </div>
+
+          <p class="about-text">
+            Founded for men who appreciate refined detailing and exceptional grooming, <strong>Apex Gentleman</strong> is more than just a barber shop — it is a sanctuary of style, comfort, and timeless sophistication.
+          </p>
+          <p class="about-text">
+            Our master barbers blend traditional razor techniques with modern aesthetic precision. Whether preparing for a key boardroom presentation or elevating your everyday look, we ensure you leave with confidence and a razor-sharp finish.
+          </p>
+
+          <!-- Bento Grid Metrics -->
+          <div class="bento-metrics">
+            <div class="metric-card">
+              <h3 class="metric-value">15,000+</h3>
+              <p class="metric-label">Precision Haircuts</p>
+            </div>
+            <div class="metric-card">
+              <h3 class="metric-value">4.9 / 5</h3>
+              <p class="metric-label">Client Rating</p>
+            </div>
+            <div class="metric-card">
+              <h3 class="metric-value">100%</h3>
+              <p class="metric-label">Satisfaction Guaranteed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Prices Section -->
+  <section class="section-padding services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">OUR MENU</span>
+        <h2 class="section-title">Services & <span class="gold-text">Transparent Pricing</span></h2>
+        <p class="section-desc">Bespoke hair design, beard grooming, and luxury skincare tailored to your individual style.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="tab-controls">
+        <button class="tab-btn active" data-tab="all">All Treatments</button>
+        <button class="tab-btn" data-tab="hair">Hair Styling</button>
+        <button class="tab-btn" data-tab="beard">Beard Grooming</button>
+        <button class="tab-btn" data-tab="combo">VIP Combos</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <!-- Service Item 1 -->
+        <div class="service-card" data-category="hair">
+          <div class="service-header">
+            <div class="service-info">
+              <h3 class="service-name">Executive Haircut & Styling</h3>
+              <span class="service-duration">45 Mins</span>
+            </div>
+            <div class="service-price">$45</div>
+          </div>
+          <p class="service-desc">Precision haircut tailored to your head structure, scalp cleanse, hot towel finish, and premium product styling.</p>
+          <a href="https://wa.me/1234567890?text=I'd%20like%20to%20inquire%20about%20the%20Executive%20Haircut%20%26%20Styling" target="_blank" rel="noopener" class="service-btn">Inquire via WhatsApp →</a>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="service-card" data-category="hair">
+          <div class="service-header">
+            <div class="service-info">
+              <h3 class="service-name">Skin Fade & Line-Up</h3>
+              <span class="service-duration">45 Mins</span>
+            </div>
+            <div class="service-price">$50</div>
+          </div>
+          <p class="service-desc">Seamless foil razor fade or drop fade with razor-sharp hairline alignment and texture styling.</p>
+          <a href="https://wa.me/1234567890?text=I'd%20like%20to%20inquire%20about%20the%20Skin%20Fade%20%26%20Line-Up" target="_blank" rel="noopener" class="service-btn">Inquire via WhatsApp →</a>
+        </div>
+
+        <!-- Service Item 3 -->
+        <div class="service-card" data-category="beard">
+          <div class="service-header">
+            <div class="service-info">
+              <h3 class="service-name">Beard Sculpting & Straight Razor Trim</h3>
+              <span class="service-duration">30 Mins</span>
+            </div>
+            <div class="service-price">$35</div>
+          </div>
+          <p class="service-desc">Beard length reduction, cheek line outline with Japanese straight razor, hot oil condition, and beard balm treatment.</p>
+          <a href="https://wa.me/1234567890?text=I'd%20like%20to%20inquire%20about%20Beard%20Sculpting" target="_blank" rel="noopener" class="service-btn">Inquire via WhatsApp →</a>
+        </div>
+
+        <!-- Service Item 4 -->
+        <div class="service-card" data-category="beard">
+          <div class="service-header">
+            <div class="service-info">
+              <h3 class="service-name">Royal Hot Towel Shave</h3>
+              <span class="service-duration">40 Mins</span>
+            </div>
+            <div class="service-price">$40</div>
+          </div>
+          <p class="service-desc">Traditional pre-shave essential oils, double hot towel wrap, rich lather cut, and soothing post-shave balm.</p>
+          <a href="https://wa.me/1234567890?text=I'd%20like%20to%20inquire%20about%20the%20Royal%20Hot%20Towel%20Shave" target="_blank" rel="noopener" class="service-btn">Inquire via WhatsApp →</a>
+        </div>
+
+        <!-- Service Item 5 (VIP Combo) -->
+        <div class="service-card featured" data-category="combo">
+          <div class="featured-tag">POPULAR CHOICE</div>
+          <div class="service-header">
+            <div class="service-info">
+              <h3 class="service-name">The Gentleman's Full Package</h3>
+              <span class="service-duration">75 Mins</span>
+            </div>
+            <div class="service-price">$75</div>
+          </div>
+          <p class="service-desc">Executive Haircut + Beard Sculpting + Hot Towel Treatment + Charcoal Facial Scrub + Complimentary Beverage.</p>
+          <a href="https://wa.me/1234567890?text=I'd%20like%20to%20inquire%20about%20The%20Gentleman's%20Full%20Package" target="_blank" rel="noopener" class="service-btn gold-btn">Inquire via WhatsApp →</a>
+        </div>
+
+        <!-- Service Item 6 (VIP Combo) -->
+        <div class="service-card" data-category="combo">
+          <div class="service-header">
+            <div class="service-info">
+              <h3 class="service-name">Father & Son Executive Cut</h3>
+              <span class="service-duration">60 Mins</span>
+            </div>
+            <div class="service-price">$80</div>
+          </div>
+          <p class="service-desc">Simultaneous cuts for father and son with premium styling and relaxed lounge refreshments.</p>
+          <a href="https://wa.me/1234567890?text=I'd%20like%20to%20inquire%20about%20the%20Father%20and%20Son%20Executive%20Cut" target="_blank" rel="noopener" class="service-btn">Inquire via WhatsApp →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After Gallery Section -->
+  <section class="section-padding gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">TRANSFORMATIONS</span>
+        <h2 class="section-title">Before & After <span class="gold-text">Master Crafts</span></h2>
+        <p class="section-desc">Drag the interactive slider to experience real client haircut transformations.</p>
+      </div>
+
+      <!-- Interactive Split Drag Slider -->
+      <div class="before-after-container" id="before-after-slider">
+        <div class="image-before">
+          <img src="assets/images/before.png" alt="Client before haircut transformation">
+          <span class="badge-label label-before">BEFORE</span>
+        </div>
+        <div class="image-after">
+          <img src="assets/images/after.png" alt="Client after razor sharp haircut transformation">
+          <span class="badge-label label-after">AFTER</span>
+        </div>
+        <div class="slider-handle">
+          <div class="handle-line"></div>
+          <div class="handle-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <div class="handle-line"></div>
+        </div>
+      </div>
+
+      <!-- Photo Showcase Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="assets/images/gallery-1.png" alt="Textured crop fade haircut">
+          <div class="gallery-overlay">
+            <h4>Textured Crop & Drop Fade</h4>
+            <p>Modern Urban Style</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/images/gallery-2.png" alt="Beard shaping and hot towel razor shave">
+          <div class="gallery-overlay">
+            <h4>Beard Sculpting & Hot Towel</h4>
+            <p>Precision Beard Care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">VISIT US</span>
+        <h2 class="section-title">Location & <span class="gold-text">Direct Contact</span></h2>
+        <p class="section-desc">We welcome walk-ins and direct inquiries. Reach out to us anytime.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card">
+          <h3 class="contact-card-title">Apex Gentleman Lounge</h3>
+          
+          <div class="info-group">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="info-text">
+              <h4>Address</h4>
+              <p>742 Executive Boulevard, Suite 100, Financial District</p>
+            </div>
+          </div>
+
+          <div class="info-group">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 16 14"/></svg>
+            </div>
+            <div class="info-text">
+              <h4>Opening Hours</h4>
+              <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+              <p>Saturday: 9:00 AM - 6:00 PM</p>
+              <p class="text-gold">Sunday: Closed (Private VIP By Request)</p>
+            </div>
+          </div>
+
+          <div class="info-group">
+            <div class="info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="info-text">
+              <h4>Direct Telephone</h4>
+              <a href="tel:+1234567890" class="phone-link">+1 (234) 567-890</a>
+            </div>
+          </div>
+
+          <!-- Direct CTA Buttons inside Contact Card -->
+          <div class="contact-cta-wrapper">
+            <a href="tel:+1234567890" class="btn btn-primary btn-full">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call Now
+            </a>
+
+            <a href="https://wa.me/1234567890?text=Hello%20Apex%20Gentleman,%20I'm%20looking%20to%20inquire%20about%20a%20grooming%20appointment." target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.486 1.333 5.002l-1.416 5.176 5.297-1.389c1.464.798 3.116 1.218 4.772 1.219h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.038-5.176-2.925-7.064s-4.394-2.924-7.064-2.924zm5.795 14.129c-.244.688-1.417 1.314-1.956 1.396-.51.077-1.173.109-1.89-.12-.435-.139-1.002-.325-1.745-.648-3.125-1.357-5.155-4.524-5.311-4.732-.156-.208-1.27-1.691-1.27-3.226 0-1.534.804-2.289 1.089-2.602.285-.313.623-.391.83-.391.208 0 .416.002.597.01.194.008.455-.074.713.546.26.623.883 2.158.96 2.314.078.156.13.338.026.546-.104.208-.156.338-.312.52-.156.182-.328.406-.468.546-.156.156-.319.326-.137.638.182.312.808 1.334 1.734 2.159 1.19 1.06 2.193 1.389 2.505 1.545.312.156.494.13.676-.078.182-.208.779-.91 1.013-1.222.234-.312.468-.26.779-.143.312.117 1.974.936 2.312 1.105.338.169.563.26.645.403.082.143.082.831-.162 1.519z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Frame Embed -->
+        <div class="map-card">
+          <iframe 
+            title="Apex Gentleman Barbershop Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69767011272023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <span class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3L18 21"/><path d="M18 3L6 21"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <span class="logo-text">APEX <span class="gold-text">GENTLEMAN</span></span>
+        </a>
+        <p class="footer-tagline">Excellence in Men's Grooming & Styling.</p>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="footer-socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.33 22a6.34 6.34 0 0 0 6.34-6.34V9.37a8.16 8.16 0 0 0 4.92 1.63V7.55a4.85 4.85 0 0 1-1-.86z"/></svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 Apex Gentleman Barbershop. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Persistent Mobile Bottom Sticky Action Dock -->
+  <div class="mobile-sticky-dock">
+    <a href="tel:+1234567890" class="dock-btn dock-call">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/1234567890?text=Hello%20Apex%20Gentleman,%20I'd%20like%20to%20ask%20a%20question%20about%20your%20grooming%20services." target="_blank" rel="noopener" class="dock-btn dock-whatsapp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.486 1.333 5.002l-1.416 5.176 5.297-1.389c1.464.798 3.116 1.218 4.772 1.219h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.038-5.176-2.925-7.064s-4.394-2.924-7.064-2.924zm5.795 14.129c-.244.688-1.417 1.314-1.956 1.396-.51.077-1.173.109-1.89-.12-.435-.139-1.002-.325-1.745-.648-3.125-1.357-5.155-4.524-5.311-4.732-.156-.208-1.27-1.691-1.27-3.226 0-1.534.804-2.289 1.089-2.602.285-.313.623-.391.83-.391.208 0 .416.002.597.01.194.008.455-.074.713.546.26.623.883 2.158.96 2.314.078.156.13.338.026.546-.104.208-.156.338-.312.52-.156.182-.328.406-.468.546-.156.156-.319.326-.137.638.182.312.808 1.334 1.734 2.159 1.19 1.06 2.193 1.389 2.505 1.545.312.156.494.13.676-.078.182-.208.779-.91 1.013-1.222.234-.312.468-.26.779-.143.312.117 1.974.936 2.312 1.105.338.169.563.26.645.403.082.143.082.831-.162 1.519z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
